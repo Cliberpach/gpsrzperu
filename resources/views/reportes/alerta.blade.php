@@ -455,7 +455,7 @@
             var table = $('.dataTables-reporte').DataTable();
             var data = table.row($(this).parents('tr')).data();
             const image = {
-                url: "https://aseguroperu.com/img/e.png",
+                url: "https://vzgpsperu.com/img/e.png",
                 // This marker is 20 pixels wide by 32 pixels high.
                 scaledSize: new google.maps.Size(50, 50),
                 // The origin for this image is (0, 0).

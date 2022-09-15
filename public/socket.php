@@ -344,19 +344,19 @@ function insert_notificacion($imei, $mensaje, $tipoalerta, $data)
                     /*
                 if($mensaje=="Ocurrio una alerta de ayuda")
                 {
-                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://aseguroperu.com/img/ayuda.png");
+                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://vzgpsperu.com/img/ayuda.png");
                 }
                 if($mensaje=="Se desconecto la bateria")
                 {
-                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://aseguroperu.com/img/bateria.png");
+                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://vzgpsperu.com/img/bateria.png");
                 }
                 if($mensaje=="Aumento de la velocidad")
                 {
-                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://aseguroperu.com/img/exceso.png");
+                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://vzgpsperu.com/img/exceso.png");
                 }
                 if($mensaje=="fuera de rango")
                 {
-                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://aseguroperu.com/img/rango.png");
+                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://vzgpsperu.com/img/rango.png");
                 }*/
                 }
                 date_default_timezone_set('America/Lima');
@@ -377,19 +377,19 @@ function insert_notificacion($imei, $mensaje, $tipoalerta, $data)
                 if ($fila['Token'] != "") {/*
                 if($mensaje=="Ocurrio una alerta de ayuda")
                 {
-                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://aseguroperu.com/img/ayuda.png");
+                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://vzgpsperu.com/img/ayuda.png");
                 }
                 if($mensaje=="Se desconecto la bateria")
                 {
-                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://aseguroperu.com/img/bateria.png");
+                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://vzgpsperu.com/img/bateria.png");
                 }
                 if($mensaje=="Aumento de la velocidad")
                 {
-                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://aseguroperu.com/img/exceso.png");
+                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://vzgpsperu.com/img/exceso.png");
                 }
                 if($mensaje=="fuera de rango")
                 {
-                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://aseguroperu.com/img/rango.png");
+                    enviar_dispositivo($fila['Token'],$fila['placa'],$fila['nrotelefono'],$mensaje,"https://vzgpsperu.com/img/rango.png");
                 }*/
                 }
                 date_default_timezone_set('America/Lima');

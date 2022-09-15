@@ -444,7 +444,7 @@ inputBox.onkeyup = (e)=>{
                               markers.push(marker);
                     }
                     var latlng=[];
-                    var imagen ={url:"https://aseguroperu.com/img/gps.png",scaledSize: new google.maps.Size(50, 50)};
+                    var imagen ={url:"https://vzgpsperu.com/img/gps.png",scaledSize: new google.maps.Size(50, 50)};
                         latlng.push(result[result.length-1].lat);
                         latlng.push(result[result.length-1].lng);
                         arregloruta.push(latlng);
@@ -483,97 +483,97 @@ inputBox.onkeyup = (e)=>{
                             if(heading==0)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_0.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_0.png",
                                             };
                             }
                             else if(heading>0 && heading<45)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_22.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_22.png",
                                         };
                             }
                             else if(heading==45)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_45.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_45.png",
                                         };
                             }
                             else if(heading>45 && heading<90)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_67.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_67.png",
                                         };
                             }
                             else if(heading==90)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_90.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_90.png",
                                         };
                             }
                             else if(heading>90 && heading<135)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_112.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_112.png",
                                         };
                             }
                             else if(heading==135)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_135.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_135.png",
                                         };
                             }
                             else if(heading>135 && heading<180)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_157.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_157.png",
                                         };
                             }
                             else if(heading==180 || heading==-180)
                             {
                                 image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_180.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_180.png",
                                         };
                             }
                             else if(heading<0 && heading>-45)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_N22.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_N22.png",
                                         };
                             }
                             else if(heading==-45)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_N45.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_N45.png",
                                         };
                             }
                             else if(heading<-45 && heading>-90)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_N67.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_N67.png",
                                         };
                             }
                             else if(heading==-90)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_N90.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_N90.png",
                                         };
                             }
                             else if(heading<90 && heading>-135)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_N112.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_N112.png",
                                         };
                             }
                             else if(heading==-135)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_N135.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_N135.png",
                                         };
                             }
                             else if(heading<-135 && heading>-180)
                             {
                                  image ={
-                                    url:"https://aseguroperu.com/img/rotation/gpa_prueba_N157.png",
+                                    url:"https://vzgpsperu.com/img/rotation/gpa_prueba_N157.png",
                                         };
                             }
                             image.scaledSize= new google.maps.Size(40, 40);

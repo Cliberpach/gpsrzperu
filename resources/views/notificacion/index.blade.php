@@ -17,7 +17,7 @@
         <div class="col-lg-12">
         <div class="ibox ">
             <div class="ibox-content">
-             
+
                 <table class="table dataTables-empresas" style="text-transform:uppercase">
                     <thead>
                         <tr>
@@ -25,16 +25,16 @@
                             <th  style="visibility:hidden;"></th>
                             <th  style="visibility:hidden;"></th>
                             <th  style="visibility:hidden;"></th>
-                         
+
 
                         </tr>
                     </thead>
                     <tbody>
                     </tbody>
                     </table>
-           
-                    
-           
+
+
+
             </div>
         </div>
     </div>
@@ -45,7 +45,7 @@
 <!-- DataTable -->
 <link href="{{ asset('Inspinia/css/plugins/select2/select2.min.css') }}" rel="stylesheet">
 <link href="{{asset('Inspinia/css/plugins/dataTables/datatables.min.css')}}" rel="stylesheet">
-@endpush 
+@endpush
 @push('scripts')
 <!-- DataTable -->
 <script src="{{ asset('Inspinia/js/plugins/select2/select2.full.min.js') }}"></script>
@@ -82,7 +82,7 @@
                     "visible": false
                 },
                 {
-                    data: null, 
+                    data: null,
                     "width": "10%",
                     searchable: false,
                     render: function (data) {
@@ -93,29 +93,29 @@
                         var html="";
                         if(data.informacion==="Se desconecto la bateria")
                 {
-                   html="<div><img src='https://aseguroperu.com/img/bateria.png' width='80px' style='border-radius: 10%;'></div>";
-                  
+                   html="<div><img src='https://vzgpsperu.com/img/bateria.png' width='80px' style='border-radius: 10%;'></div>";
+
                 }
                 else if(data.informacion==="Aumento de la velocidad")
                 {
-                    html="<div><img src='https://aseguroperu.com/img/exceso.png' width='80px' style='border-radius: 10%;'></div>";
-                   
+                    html="<div><img src='https://vzgpsperu.com/img/exceso.png' width='80px' style='border-radius: 10%;'></div>";
+
                 }
                 else if(data.informacion==="Ocurrio una alerta de ayuda")
                 {
-                    html="<div><img src='https://aseguroperu.com/img/ayuda.png' width='80px' style='border-radius: 10%;'></div>";
-                   
+                    html="<div><img src='https://vzgpsperu.com/img/ayuda.png' width='80px' style='border-radius: 10%;'></div>";
+
                 }
                 else if(data.informacion==="fuera de rango")
                 {
-                    html="<div><img src='https://aseguroperu.com/img/rango.png' width='80px' style='border-radius: 10%;'></div>";
+                    html="<div><img src='https://vzgpsperu.com/img/rango.png' width='80px' style='border-radius: 10%;'></div>";
                 }
-                 
+
                         return html;
                     }
                 },
                 {
-                    data: null, 
+                    data: null,
                     searchable: false,
                     render: function (data) {
                         //Ruta Detalle
@@ -126,7 +126,7 @@
                     }
                 },
                 {
-                    data: null, 
+                    data: null,
                     searchable: false,
                     render: function (data) {
                         //Ruta Detalle
@@ -137,7 +137,7 @@
                     }
                 },
                 {
-                    data: null, 
+                    data: null,
                     searchable: false,
                     render: function (data) {
                         //Ruta Detalle
