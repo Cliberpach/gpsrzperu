@@ -595,7 +595,7 @@ class ReporteController extends Controller
         $fechafinal = explode(' ', $request->fechafinal)[0];
         $fechanow = strval(date("Y/n/d", time()));
         $data = array();
-        
+
         $consulta = DB::table('dispositivo as d')->where([['m.lat', '<>', '0'], ['lng', '<>', '0'], ['d.imei', '=', $request->dispositivo]])
             ->whereBetween('m.fecha', [$request->fechainicio, $request->fechafinal]);
         if (($fechainicio != $fechanow) && ($fechanow == $fechafinal)) {
@@ -777,7 +777,7 @@ class ReporteController extends Controller
                     }
                 }
             }
-            /*$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=".$consulta[$i]->lat.",".$consulta[$i]->lng."&key=AIzaSyAS6qv64RYCHFJOygheJS7DvBDYB0iV2wI";
+            /*$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=".$consulta[$i]->lat.",".$consulta[$i]->lng."&key=AIzaSyBNbXYfqSaqzePxYwg-BkOFgnkAoSIfuWw";
             $contexto = stream_context_create($opciones);
             $resultado = file_get_contents($url, false, $contexto);
             $resultado=json_decode($resultado,true);*/

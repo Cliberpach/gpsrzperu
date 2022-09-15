@@ -118,7 +118,7 @@
         }
 
   </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS6qv64RYCHFJOygheJS7DvBDYB0iV2wI&callback=initMap" async
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNbXYfqSaqzePxYwg-BkOFgnkAoSIfuWw&callback=initMap" async
 ></script>
 
 @endpush

@@ -52,7 +52,7 @@ $.ajax({
                         result[i].lat +
                         "," +
                         result[i].lng +
-                        "&key=AIzaSyAS6qv64RYCHFJOygheJS7DvBDYB0iV2wI",
+                        "&key=AIzaSyBNbXYfqSaqzePxYwg-BkOFgnkAoSIfuWw",
                     type: "GET",
                     async: false,
                     success: function (res) {
@@ -225,7 +225,7 @@ function dispositivo() {
                             arreglo[nindice].lat +
                             "," +
                             arreglo[nindice].lng +
-                            "&key=AIzaSyAS6qv64RYCHFJOygheJS7DvBDYB0iV2wI",
+                            "&key=AIzaSyBNbXYfqSaqzePxYwg-BkOFgnkAoSIfuWw",
                         type: "GET",
                         async: false,
                         success: function (res) {
