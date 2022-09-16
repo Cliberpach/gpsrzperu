@@ -288,8 +288,8 @@
             map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 12,
                 center: {
-                    lat: -8.1092027,
-                    lng: -79.0244529
+                    lat: -5.19449,
+                    lng: -80.63282
                 },
                 gestureHandling: "greedy",
                 mapTypeControl: false,
@@ -298,8 +298,8 @@
             map2 = new google.maps.Map(document.getElementById("map2"), {
                 zoom: 12,
                 center: {
-                    lat: -8.1092027,
-                    lng: -79.0244529
+                    lat: -5.19449,
+                    lng: -80.63282
                 },
                 gestureHandling: "greedy",
                 mapTypeControl: false,
@@ -574,7 +574,7 @@
                             direccion = await axios.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' +
                             returnValue[i].lat + ',' +
                             returnValue[i].lng + '&key=AIzaSyB3oElOKZsIKTL2eB8peIQCTm6P77bJO1Q');
-                           
+
                             var json_direccion=JSON.stringify(direccion.data).toString()
                             direccion = direccion.data.results[0].address_components[1].long_name + " " + direccion.data.results[0].address_components[0].long_name;
                             axios.post('https://apis.siscomfac.com/api/posicion',
@@ -602,8 +602,8 @@
                     else{
                         direccion=direccion.data[0].direccion;
                     }
-                  
-                   
+
+
                 }
                 data_reporte.push([
                     i,
