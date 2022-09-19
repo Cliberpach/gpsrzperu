@@ -48,7 +48,9 @@
                         <div class="col-md-6 col-xs-12">
                             <label class="" id="">Nombre Comercial</label>
                             <input type="text" id="nombre_comercial" name="nombre_comercial"
-                                class="form-control {{ $errors->has('nombre_comercial') ? ' is-invalid' : '' }}"
+
+
+                            class="form-control {{ $errors->has('nombre_comercial') ? ' is-invalid' : '' }}"
                                 value="{{ old('nombre_comercial') ? old('nombre_comercial') : $cliente->nombre_comercial }}"
                                 maxlength="191" onkeyup="return mayus(this)">
                             @if ($errors->has('nombre_comercial'))
@@ -95,7 +97,7 @@
                             </span>
                             @endif
                         </div>
-                        
+
 
                     </div>
                 </div>

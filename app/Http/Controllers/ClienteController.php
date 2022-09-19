@@ -46,6 +46,8 @@ class ClienteController extends Controller
      */
     public function store(Request $request)
     {
+      try {
+        //code...
         $data = $request->all();
 
         $rules = [
@@ -152,6 +154,11 @@ class ClienteController extends Controller
         return redirect()
             ->route('cliente.index')
             ->with('guardar', 'success');
+      } catch (\Exception $th) {
+        //throw $th;
+        return response()->json(["ex"=>$th->getMessage()]);
+      }
+
     }
 
     /**

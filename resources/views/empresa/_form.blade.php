@@ -163,7 +163,7 @@
                     </div>
                     <div class="form-group row col-lg-12">
 
-                        <label class="required">Contaseña</label>
+                        <label class="required">Contaseña Envio Correo</label>
                         <div class="input-group">
                             <input type="text" id="contraseña" name="contraseña"
                                 class="form-control {{ $errors->has('contraseña') ? ' is-invalid' : '' }}"
@@ -423,8 +423,8 @@
                 allowClear: true,
                 height: '200px',
                 width: '100%',
-            }); 
-            if ($("#activo").val() == ''){ 
+            });
+            if ($("#activo").val() == ''){
                 $("#activo").val("SIN VERIFICAR");
             }
             const container = document.querySelector('.color-pickers');
@@ -432,7 +432,7 @@
             const btn = document.getElementById('btn-color');
             btn.addEventListener('click', () => {
 
-            
+
                 btn.disabled=true;
                 const pickr = new Pickr({
                     el: container,
@@ -477,7 +477,7 @@
                         pickr.hide();
                         });
                 });
-                
+
 
         });
         /* Limpiar imagen */
@@ -602,8 +602,8 @@ $('#logo_icon').val('')
                                 throw new Error(response.statusText)
                             }
                             else
-                            { 
-                              return response.json()  
+                            {
+                              return response.json()
                             }
                         })
                         .catch(error => {
@@ -615,7 +615,7 @@ $('#logo_icon').val('')
                 allowOutsideClick: () => !Swal.isLoading()
             }).then((result) => {
                 if (result.value !== undefined && result.isConfirmed) {
-                        camposRUC(result);                 
+                        camposRUC(result);
                 }
             });
     }
@@ -697,11 +697,11 @@ $('#logo_icon').val('')
                 return true;
             },
             onFinished: function (event, currentIndex)
-            {    
-        
+            {
+
                 if(!validarDatosRedesContacto())
                 {
-                   toastr.error('Complete la información de los campos obligatorios (*)','Error');  
+                   toastr.error('Complete la información de los campos obligatorios (*)','Error');
                 }
                 else
                 {
@@ -732,11 +732,11 @@ $('#logo_icon').val('')
             var correo_electronico = $("#correo_electronico").val();
             var contraseña = $("#contraseña").val();
             if ( ruc.length === 0
-             || nombre_comercial.length === 0 
+             || nombre_comercial.length === 0
              || razon_social.length===0
-             || direccion_fiscal.length === 0 
-             || direccion.length === 0 
-             || telefono_movil.length === 0 
+             || direccion_fiscal.length === 0
+             || direccion.length === 0
+             || telefono_movil.length === 0
              || correo_electronico.length === 0
              || contraseña.length === 0) {
                 toastr.error('Complete la información de los campos obligatorios (*)','Error');
@@ -750,15 +750,15 @@ $('#logo_icon').val('')
             var whatsapp=$("#whatsapp").val();
             var nombre_contacto=$("#nombre_contacto").val();
             var tipo_documento_contacto=$("#tipo_documento_contacto").val();
-            var documento_contacto=$("#documento_contacto").val();      
+            var documento_contacto=$("#documento_contacto").val();
             if ( facebook.length === 0
-             || whatsapp.length === 0 
+             || whatsapp.length === 0
              ) {
                 return false;
             }
             return true;
        }
-      
+
 
 // Usage example
 $(function(){
