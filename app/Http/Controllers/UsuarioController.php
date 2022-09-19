@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use App\RoleUser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -106,5 +107,26 @@ class UsuarioController extends Controller
     {
         
         return $request;
+    }
+    public function cambiarPassword(Request $request){
+        try{
+            $nuevPassword = $request->newPassword;
+            $idusuario = (int)$request->idusuario;
+            $usuario = User::findOrFail($idusuario);
+            $usuario->password = bcrypt($nuevPassword);
+            $usuario->update();
+            
+            return response()->json([
+                "success"=>true,
+                "message"=> "Contraseña actualizada."
+            ]);
+
+        }catch(\Exception $ex){
+            return response()->json([
+                "success"=>false,
+                "message"=>$ex->getMessage(),
+                "all"=>$request->all()
+            ]);
+        }
     }
 }

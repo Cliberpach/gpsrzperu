@@ -377,7 +377,7 @@
                     },
                     allowOutsideClick: () => !Swal.isLoading()
                 }).then((result) => {
-                    console.log(result);
+                    
                     if (result.value !== undefined && result.isConfirmed) {
                         $('#documento').removeClass('is-invalid')
                         if (tipo_documento === 'DNI')
@@ -392,10 +392,14 @@
         function camposDNI(objeto) {
             if (objeto.value === undefined)
                 return;
-            var nombres = objeto.value.nombres;
-            var apellido_paterno = objeto.value.apellidoPaterno;
-            var apellido_materno = objeto.value.apellidoMaterno;
+            const {data} = objeto.value;
+            
+            var nombres = data.nombres;
+            var apellido_paterno = data.apellido_paterno;
+            var apellido_materno = data.apellido_materno;
             var nombre = "";
+            var direccion = data.direccion;
+
             if (nombres !== '-' && nombres !== null) {
                 nombre += nombres;
             }
@@ -405,8 +409,11 @@
             if (apellido_materno !== '-' && apellido_materno !== null) {
                 nombre += (nombre.length === 0) ? apellido_materno : ' ' + apellido_materno
             }
+            
             $("#nombre").val(nombre);
             $("#activo").val("ACTIVO");
+            $('#direccion').val(direccion);
+
         }
 
         function camposRUC(objeto) {

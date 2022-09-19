@@ -197,6 +197,7 @@ Route::prefix('usuario')->group(function () {
     Route::get('/datos/{id}', [UsuarioController::class, 'show'])->name('usuarios.show')->middleware('auth');
     Route::get('/destroy/{id}', [UsuarioController::class, 'destroy'])->name('usuarios.destroy')->middleware('auth');
     Route::post('/cambiarrol', [UsuarioController::class, 'cambiarrol'])->name('usuarios.cambiarrol');
+    Route::post('/cambiarPassword', [UsuarioController::class, 'cambiarPassword'])->name('usuarios.cambiarPassword');
 });
 
 /// llamado informacion mampa
