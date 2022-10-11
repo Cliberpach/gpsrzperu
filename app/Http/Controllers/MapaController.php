@@ -19,6 +19,9 @@ class MapaController extends Controller
         return view('mapa.index');
     }
 
+    public function pruebas(){
+        return view("mapa.pruebas.indexPrueba");
+    }
     /**
      * Show the form for creating a new resource.
      *

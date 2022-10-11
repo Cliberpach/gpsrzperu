@@ -199,6 +199,7 @@
         </div>
         </div>
     @endauth
+    @stack('scripts-vuejs')
     <script  src="{{ asset('js/app.js') }}" ></script>
     <script src="{{ asset('Inspinia/js/jquery-3.1.1.min.js') }}"></script>
     <script src="{{ asset('js/PageInit/color.js') }}"></script>

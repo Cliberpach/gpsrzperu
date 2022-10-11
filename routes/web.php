@@ -152,6 +152,7 @@ Route::prefix('rangos')->group(function () {
 
 Route::prefix('mapas')->group(function () {
     Route::get('/', [MapaController::class, 'index'])->name('mapa.index')->middleware('auth');
+    Route::get('/pruebas', [MapaController::class, 'pruebas'])->name('mapa.pruebas')->middleware('auth');
 });
 Route::prefix('empresa')->group(function () {
     Route::get('/', [EmpresaPersonalController::class, 'index'])->name('empresa.index')->middleware('auth');
