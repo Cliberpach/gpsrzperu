@@ -77316,9 +77316,12 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   cluster: "mt1",
   wsHost: window.location.hostname,
   wsPort: 6001,
-  forceTLS: false,
-  disableStats: true
-});
+  disableStats: true,
+  encrypted: false,
+  enabledTransports: ['ws', 'wss'] // forceTLS: false,
+
+}); // console.log(window.location.hostname);
+
 /*
 import Echo from 'laravel-echo';
 window.Pusher = require('pusher-js');
