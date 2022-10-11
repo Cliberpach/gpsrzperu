@@ -43913,7 +43913,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var laravel_echo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! laravel-echo */ "./node_modules/laravel-echo/dist/echo.js");
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var laravel_echo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! laravel-echo */ "./node_modules/laravel-echo/dist/echo.js");
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -43948,12 +43948,13 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
   key: "Ld9C4zHBBGelFD5bHaRYZY8cIrErmmgh",
   cluster: "mt1",
-  wsHost: window.location.hostname,
-  wsPort: 6001,
+  wsHost: process.env.MIX_PUSHER_HOST ? process.env.MIX_PUSHER_HOST : window.location.hostname,
+  wsPort: process.env.MIX_PUSHER_PORT ? process.env.MIX_PUSHER_PORT : 6001,
+  wssPort: process.env.MIX_PUSHER_PORT ? process.env.MIX_PUSHER_PORT : 6000,
+  forceTLS: false,
+  encrypted: true,
   disableStats: true,
-  encrypted: false,
-  enabledTransports: ['ws', 'wss'] // forceTLS: false,
-
+  enabledTransports: ['ws', 'wss']
 }); // console.log(window.location.hostname);
 
 /*
@@ -43978,6 +43979,7 @@ window.Echo = new Echo({
 });
 
 */
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 

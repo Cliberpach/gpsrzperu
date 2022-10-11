@@ -36,12 +36,13 @@ window.Echo = new Echo({
     broadcaster: 'pusher',
     key: process.env.MIX_PUSHER_APP_KEY,
     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
-    wsHost: window.location.hostname,
-    wsPort: 6001,
+    wsHost: process.env.MIX_PUSHER_HOST ? process.env.MIX_PUSHER_HOST : window.location.hostname,
+    wsPort: process.env.MIX_PUSHER_PORT ? process.env.MIX_PUSHER_PORT : 6001,
+    wssPort: process.env.MIX_PUSHER_PORT ? process.env.MIX_PUSHER_PORT : 6000,
+    forceTLS: false,
+    encrypted: true,
     disableStats: true,
-    encrypted: false,
-    enabledTransports: ['ws', 'wss'],
-    // forceTLS: false,
+    enabledTransports: ['ws', 'wss']
 });
 // console.log(window.location.hostname);
 /*
