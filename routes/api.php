@@ -38,8 +38,11 @@ Route::group(['prefix' => 'v1'], function () {
   });
 
   Route::post("/map/prueba",function(Request $request){
-    $lat = $request->lat;
-    $lng = $request->lng;
+
+    $loc = $request->location;
+    $loc = explode(",", $loc);
+    $lat = $loc[0];
+    $lng = $loc[1];
     $location = ["lat"=>$lat,"lng"=>$lng];
     broadcast(new SendPositionPrueba($location));
     return response()->json(["status"=>true,"location"=>$location]);
