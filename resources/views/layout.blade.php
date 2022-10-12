@@ -10,17 +10,17 @@
     @if (verificarempresaloginicon())
         <link rel="icon" href="{{ Storage::url(empresacolor()->ruta_logo_icon) }}" />
     @else
-        <link rel="icon" href="{{ asset('img/e.png') }}" />
+        <link rel="icon" href="/img/e.png" />
     @endif
-    <link href="{{ asset('Inspinia/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('Inspinia/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
-    <link href="{{ asset('Inspinia/css/animate.css') }}" rel="stylesheet">
-    <link href="{{ asset('Inspinia/css/style.css') }}" rel="stylesheet">
+    <link href="/Inspinia/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/Inspinia/css/animate.css" rel="stylesheet">
+    <link href="/Inspinia/css/style.css" rel="stylesheet">
     <!-- Toastr style -->
-    <link href="{{ asset('Inspinia/css/plugins/toastr/toastr.min.css') }}" rel="stylesheet">
+    <link href="/Inspinia/css/plugins/toastr/toastr.min.css" rel="stylesheet">
     <!-- Styles -->
     @stack('styles')
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     @stack('styles-mapas')
     <style>
         .contenedor {
@@ -200,15 +200,15 @@
         </div>
     @endauth
     @stack('scripts-vuejs')
-    <script  src="{{ asset('js/app.js') }}" ></script>
-    <script src="{{ asset('Inspinia/js/jquery-3.1.1.min.js') }}"></script>
-    <script src="{{ asset('js/PageInit/color.js') }}"></script>
+    <script  src="/js/app.js" ></script>
+    <script src="/Inspinia/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/PageInit/color.js"></script>
 
     <script>
         var url_notificacion_data = '{{ route('notificacion.data') }}';
 
     </script>
-    <script src="{{ asset('js/PageInit/notificaciones.js') }}"></script>
+    <script src="/js/PageInit/notificaciones.js"></script>
     <script>
         var url_leer = '{{ route('notificacion.leer') }}';
 
@@ -223,16 +223,16 @@
 
     </script>
 
-    <script src="{{ asset('Inspinia/js/popper.min.js') }}"></script>
-    <script src="{{ asset('Inspinia/js/bootstrap.js') }}"></script>
-    <script src="{{ asset('Inspinia/js/plugins/metisMenu/jquery.metisMenu.js') }}"></script>
-    <script src="{{ asset('Inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js') }}"></script>
-    <script src="{{ asset('Inspinia/js/inspinia.js') }}"></script>
-    <script src="{{ asset('Inspinia/js/plugins/pace/pace.min.js') }}"></script>
-    <script src="{{ asset('Inspinia/js/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
-    <script src="{{ asset('Inspinia/js/plugins/toastr/toastr.min.js') }}"></script>
-    <script src="{{ asset('Inspinia/js/scripts.js') }}"></script>
-    <script src="{{ asset('SweetAlert/sweetalert2@10.js') }}"></script>
+    <script src="/Inspinia/js/popper.min.js"></script>
+    <script src="/Inspinia/js/bootstrap.js"></script>
+    <script src="/Inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/Inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/Inspinia/js/inspinia.js"></script>
+    <script src="/Inspinia/js/plugins/pace/pace.min.js"></script>
+    <script src="/Inspinia/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/Inspinia/js/plugins/toastr/toastr.min.js"></script>
+    <script src="/Inspinia/js/scripts.js"></script>
+    <script src="/SweetAlert/sweetalert2@10.js"></script>
     @stack('scripts-mapas')
     @stack('scripts')
     <script>
