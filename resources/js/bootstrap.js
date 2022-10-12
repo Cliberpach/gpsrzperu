@@ -36,16 +36,16 @@ let options = {
     broadcaster: 'pusher',
     key: process.env.MIX_PUSHER_APP_KEY,
     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
-    wsHost: process.env.MIX_PUSHER_HOST ? process.env.MIX_PUSHER_HOST : window.location.hostname,
-    wsPort: process.env.MIX_PUSHER_PORT ? process.env.MIX_PUSHER_PORT : 6001,
-    wssPort: process.env.MIX_PUSHER_PORT ? process.env.MIX_PUSHER_PORT : 6000,
+    wsHost: process.env.MIX_PUSHER_APP_HOST ? process.env.MIX_PUSHER_HOST : window.location.hostname,
+    wsPort: process.env.MIX_PUSHER_APP_PORT ? process.env.MIX_PUSHER_PORT : 6001,
+    wssPort: process.env.MIX_PUSHER_APP_PORT ? process.env.MIX_PUSHER_PORT : 6000,
     forceTLS: false,
     encrypted: true,
     disableStats: true,
     enabledTransports: ['ws', 'wss']
 }
 window.Echo = new Echo(options);
-console.log(process.env.MIX_PUSHER_APP_PORT);
+console.log(optios);
 
 // console.log(window.location.hostname);
 /*
