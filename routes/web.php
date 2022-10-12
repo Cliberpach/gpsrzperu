@@ -252,6 +252,9 @@ Route::prefix('rmapa')->group(function () {
 
 Route::get("probando",function(){
     return response()->json([
-        "db"=>env("DB_DATABASE")
+        "db"=>env("DB_DATABASE"),
+        "PUSHER_HOST"=>env("PUSHER_HOST"),
+        "PUSHER_PORT"=>env("PUSHER_PORT"),
+        "PUSHER_SCHEME"=>env("PUSHER_SCHEME")
     ]);
 });
