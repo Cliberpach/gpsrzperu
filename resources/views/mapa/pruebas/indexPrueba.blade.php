@@ -1,7 +1,8 @@
 @extends('layout')
 @section('content')
-    
+    <p>holas{{ env('DB_DATABASE',787) }}</p>
     <component-map></component-map>
+    
 @stop
 @push('styles-mapas')
     <link href="/css/velocimetro.css" rel="stylesheet">

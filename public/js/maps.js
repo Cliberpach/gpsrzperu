@@ -77323,8 +77323,7 @@ var options = {
   enabledTransports: ['ws', 'wss']
 };
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"](options);
-console.log(process);
-console.log(options); // console.log(window.location.hostname);
+console.log(process.env.MIX_PUSHER_APP_PORT); // console.log(window.location.hostname);
 
 /*
 import Echo from 'laravel-echo';

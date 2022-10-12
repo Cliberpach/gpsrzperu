@@ -249,3 +249,9 @@ Route::prefix('rmapa')->group(function () {
     Route::post('/dispositivoruta', [RMapaController::class, 'dispositivoruta'])->name('rmapa.dispositivoruta');
     Route::post('/dispositivos', [RMapaController::class, 'dispositivos'])->name('rmapa.dispositivos');
 });
+
+Route::get("probando",function(){
+    return response()->json([
+        "db"=>env("DB_DATABASE")
+    ]);
+});

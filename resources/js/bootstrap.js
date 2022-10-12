@@ -45,8 +45,7 @@ let options = {
     enabledTransports: ['ws', 'wss']
 }
 window.Echo = new Echo(options);
-console.log(process);
-console.log(options);
+console.log(process.env.MIX_PUSHER_APP_PORT);
 
 // console.log(window.location.hostname);
 /*
